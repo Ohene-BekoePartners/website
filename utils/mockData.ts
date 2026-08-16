@@ -446,6 +446,64 @@ export const lawyers: Lawyer[] = [
       phone: "+233 20 588 2007",
     },
   },
+  {
+    id: "5",
+    name: "Gillian Adjoa Acheampong",
+    slug: "gillian-adjoa-acheampong",
+    title: "Candidate Attorney",
+    practiceAreas: [
+      "Litigation, Arbitration & Dispute Resolution",
+      "Corporate & Commercial Law",
+    ],
+    image: "gillian-adjoa-acheampong",
+    intro:
+      "Ms. Acheampong is a Candidate Attorney in the firm’s Litigation, Arbitration and Dispute Resolution, and Corporate and Commercial Law practice groups.",
+    bio: [
+      "With a meticulous eye for detail, she delivers exceptional results through dedicated professionalism.",
+      "Ms. Amponsah served as an Intern and Paralegal at Kwame Gyan & Associates, where she gained practical experience in legal research, drafting legal documents, litigation support, and client advisory.",
+      "Her interests include Corporate and Commercial Law, Contract Law, Property Law, and Alternative Dispute Resolution.",
+    ],
+    qualifications: [
+      "Bachelor of Laws (LLB) – Central University",
+      "Bachelor of Science in Marketing (BSc) – Ghana Communication Technology University",
+    ],
+    specialisms: [
+      "Litigation, Arbitration & Dispute Resolution",
+      "Corporate & Commercial Law",
+    ],
+    contact: {
+      phone: "+233 20 588 2007",
+    },
+  },
+  {
+    id: "6",
+    name: "Samuel Bennett Owusu",
+    slug: "samuel-bennett-owusu",
+    title: "Candidate Attorney",
+    practiceAreas: [
+      "Litigation, Arbitration & Dispute Resolution",
+      "Criminal Law",
+    ],
+    // No portrait supplied yet — the profile renders an initials placeholder.
+    image: "",
+    intro:
+      "Samuel is an LL.B. candidate with background in Nursing. He serves as a Candidate Attorney in the law firm as he supports the Litigation, Arbitration and Dispute Resolution, and Criminal Law practice groups.",
+    bio: [
+      "He values professionalism, efficiency and continuous learning in his career. His lifestyle reflects his discipline, passion for growth and appreciation for balance between work and personal life.",
+    ],
+    qualifications: [
+      "Bachelor of Laws (LL.B.) – Greenfield University College",
+      "Bachelor of Science in Nursing (BSN) – University of Ghana",
+      "St. James Seminary and Senior High School",
+    ],
+    specialisms: [
+      "Litigation, Arbitration & Dispute Resolution",
+      "Criminal Law",
+    ],
+    contact: {
+      phone: "+233 20 588 2007",
+    },
+  },
 ];
 
 export const insights: Insight[] = [

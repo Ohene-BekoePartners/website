@@ -29,8 +29,7 @@ export function ContactSection() {
               <p className="mt-2 text-white/80">
                 1 Liberation Road, North Ridge
               </p>
-              <p className="text-white/80">Accra</p>
-              <p className="text-white/80">Ghana</p>
+              <p className="text-white/80">Accra - Ghana</p>
               <p className="mt-4">
                 <a
                   href="mailto:contact@ohenebekoeandpartners.com"

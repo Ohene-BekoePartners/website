@@ -5,6 +5,7 @@ import type { LawyerCareer, LawyerPublication } from "@/utils/mockData";
 import Link from "next/link";
 import Image from "next/image";
 import { getLawyerPortrait } from "@/utils/images";
+import { PortraitPlaceholder } from "@/components/ui/PortraitPlaceholder";
 
 export interface ProfileCardSectionsProps {
   qualifications?: string[];
@@ -255,13 +256,17 @@ export function TeamMemberCard({
       className="group flex flex-col border border-border bg-white transition-colors hover:border-charcoal-muted/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 sm:flex-row"
     >
       <div className="aspect-[3/4] w-full shrink-0 relative overflow-hidden img-editorial sm:w-56">
-        <Image
-          src={portraitSrc}
-          alt={`${name}, ${title}`}
-          fill
-          className="object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
-          sizes="(min-width: 640px) 224px, 100vw"
-        />
+        {portraitSrc ? (
+          <Image
+            src={portraitSrc}
+            alt={`${name}, ${title}`}
+            fill
+            className="object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
+            sizes="(min-width: 640px) 224px, 100vw"
+          />
+        ) : (
+          <PortraitPlaceholder name={name} />
+        )}
       </div>
       <div className="flex flex-1 flex-col justify-center p-6 lg:p-8">
         <h2 className="font-serif text-xl font-semibold text-foreground group-hover:text-gold transition-colors">

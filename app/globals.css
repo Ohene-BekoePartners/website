@@ -56,24 +56,6 @@ body {
   font-family: var(--font-family-body);
 }
 
-/**
- * Long-form copy only: Word-style justified paragraphs. Add class `text-justify-rich`
- * on a wrapper around detail-page body or rich cards — not site-wide.
- */
-.text-justify-rich p {
-  text-align: justify;
-  text-wrap: pretty;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-}
-
-/* Centered blocks inside a justified region (e.g. footnotes) */
-.text-justify-rich .text-center p {
-  text-align: center;
-  hyphens: none;
-  -webkit-hyphens: none;
-}
-
 /* Explicit utilities align with Tailwind theme tokens */
 .font-heading {
   font-family: var(--font-family-heading);

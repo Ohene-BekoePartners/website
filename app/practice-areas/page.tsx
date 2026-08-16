@@ -38,7 +38,7 @@ export default function PracticeAreasPage() {
                   sizes="(min-width: 1024px) 320px, (min-width: 640px) 50vw, 100vw"
                 />
               </Link>
-              <div className="flex flex-1 flex-col p-6 text-justify-rich">
+              <div className="flex flex-1 flex-col p-6">
                 <div className="flex items-start gap-3">
                   <span
                     className="mt-0.5 h-5 w-1 shrink-0 rounded-sm bg-gold"

@@ -6,6 +6,7 @@ import { getTeamMemberBySlug, getAllTeamMemberSlugs } from "@/utils/team";
 import { getLawyerProfilePageImage } from "@/utils/images";
 import { PageHero } from "@/components/ui/PageHero";
 import { ProfileCardSections } from "@/components/screens/lawyer/ProfileCardSections";
+import { PortraitPlaceholder } from "@/components/ui/PortraitPlaceholder";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -107,14 +108,18 @@ export default async function TeamMemberProfilePage({ params }: Props) {
         <div className="flex flex-col gap-12 lg:flex-row lg:gap-16">
           <div className="flex flex-col gap-10 lg:flex-row lg:gap-14">
             <div className="aspect-3/4 w-full max-w-sm shrink-0 relative overflow-hidden img-editorial self-start">
-              <Image
-                src={portraitSrc}
-                alt={`${member.name}, ${member.title}`}
-                fill
-                className="object-cover object-top"
-                sizes="(min-width: 1024px) 384px, 100vw"
-                priority
-              />
+              {portraitSrc ? (
+                <Image
+                  src={portraitSrc}
+                  alt={`${member.name}, ${member.title}`}
+                  fill
+                  className="object-cover object-top"
+                  sizes="(min-width: 1024px) 384px, 100vw"
+                  priority
+                />
+              ) : (
+                <PortraitPlaceholder name={member.name} />
+              )}
             </div>
             <div className="flex-1 min-w-0">
               {member.quote && (
@@ -122,7 +127,7 @@ export default async function TeamMemberProfilePage({ params }: Props) {
                   {member.quote}
                 </blockquote>
               )}
-              <div className="text-justify-rich">
+              <div>
                 {member.intro && (
                   <p className="text-base text-charcoal-muted leading-relaxed mb-6">
                     {member.intro}

@@ -39,7 +39,7 @@ export function InsightCardsGrid({ items }: { items: Insight[] }) {
               />
             </Link>
           )}
-          <CardContent className="text-justify-rich">
+          <CardContent>
             <p className="text-xs font-medium uppercase tracking-wider text-gold">
               {item.category}
             </p>

@@ -68,13 +68,18 @@ export const lawyerPortraits = {
   "irene-ofori-ani": "/irene.jpeg",
   "lauda-lois-williams": "/louda_lois.jpeg",
   "emmanuel-opoku-somuah": "/emmanuel_opoku.jpeg",
+  "gillian-adjoa-acheampong": "/gillian.jpeg",
 } as const;
 
 export type LawyerSlug = keyof typeof lawyerPortraits;
 
-export function getLawyerPortrait(slug: string): string {
+/**
+ * Returns `undefined` when no portrait exists for the slug — callers render a
+ * placeholder. Never falls back to another person's photograph.
+ */
+export function getLawyerPortrait(slug: string): string | undefined {
   if (slug in lawyerPortraits) return lawyerPortraits[slug as LawyerSlug];
-  return lawyerPortraits["daniel-ohene-bekoe"];
+  return undefined;
 }
 
 /**
@@ -85,7 +90,7 @@ const lawyerProfilePageImages: Partial<Record<LawyerSlug, string>> = {
   "daniel-ohene-bekoe": "/daniel.jpeg",
 };
 
-export function getLawyerProfilePageImage(slug: string): string {
+export function getLawyerProfilePageImage(slug: string): string | undefined {
   if (slug in lawyerProfilePageImages) {
     const src = lawyerProfilePageImages[slug as LawyerSlug];
     if (src) return src;

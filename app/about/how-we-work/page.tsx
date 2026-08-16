@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const proseClass =
-  "text-justify-rich prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-foreground prose-p:text-charcoal-muted prose-p:max-w-prose prose-p:leading-relaxed prose-a:text-gold";
+  "prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-foreground prose-p:text-charcoal-muted prose-p:max-w-prose prose-p:leading-relaxed prose-a:text-gold";
 
 export default function HowWeWorkPage() {
   return (

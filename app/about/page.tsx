@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const proseClass =
-  "text-justify-rich prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-foreground prose-p:text-charcoal-muted prose-p:max-w-prose prose-p:leading-relaxed prose-a:text-gold";
+  "prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-foreground prose-p:text-charcoal-muted prose-p:max-w-prose prose-p:leading-relaxed prose-a:text-gold";
 
 export default function AboutPage() {
   return (
@@ -47,6 +47,17 @@ export default function AboutPage() {
             At Ohene-Bekoe & Partners, we are committed to delivering legal
             services with professionalism, integrity, and a dedication to
             excellence.
+          </p>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="font-serif text-2xl font-semibold text-foreground">
+            Mission
+          </h2>
+          <p className="mt-4 text-charcoal-muted">
+            Ohene-Bekoe & Partners exists to provide exceptional legal
+            representation, build enduring client trust, and elevate the
+            practice of law across Ghana.
           </p>
         </section>
       </div>

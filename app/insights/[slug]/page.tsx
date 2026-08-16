@@ -57,7 +57,7 @@ export default async function InsightPage({ params }: Props) {
         />
       }
     >
-      <div className="max-w-3xl text-justify-rich">
+      <div className="max-w-3xl">
         {insight.image && (
           <div className="aspect-video w-full relative rounded-lg overflow-hidden bg-slate-light mb-12 img-editorial">
             <Image

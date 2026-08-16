@@ -51,7 +51,7 @@ export function PracticeAreasSection() {
                   />
                 </Link>
 
-                <div className="flex flex-1 flex-col p-5 pt-5 text-justify-rich">
+                <div className="flex flex-1 flex-col p-5 pt-5">
                   <div className="flex items-start gap-3">
                     <span
                       className="mt-0.5 h-5 w-1 shrink-0 rounded-sm bg-gold"

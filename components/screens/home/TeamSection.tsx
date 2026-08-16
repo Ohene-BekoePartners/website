@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { lawyers } from "@/utils/mockData";
 import { getLawyerPortrait } from "@/utils/images";
+import { PortraitPlaceholder } from "@/components/ui/PortraitPlaceholder";
 import { Button } from "@/components/ui/Button";
 
 function LawyerCard({
@@ -22,13 +23,17 @@ function LawyerCard({
       className="group block border border-border bg-white transition-colors hover:border-charcoal-muted/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
     >
       <div className="aspect-[3/4] relative overflow-hidden img-editorial">
-        <Image
-          src={portraitSrc}
-          alt={`${name}, ${title}`}
-          fill
-          className="object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
-          sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-        />
+        {portraitSrc ? (
+          <Image
+            src={portraitSrc}
+            alt={`${name}, ${title}`}
+            fill
+            className="object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
+            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+          />
+        ) : (
+          <PortraitPlaceholder name={name} />
+        )}
       </div>
       <div className="p-6">
         <h3 className="font-serif text-lg font-semibold text-foreground group-hover:text-gold transition-colors">

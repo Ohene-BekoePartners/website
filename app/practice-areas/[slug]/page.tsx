@@ -93,7 +93,7 @@ export default async function PracticeAreaDetailPage({ params }: Props) {
           </p>
         </div>
 
-        <div className="text-justify-rich">
+        <div>
           <p className="mt-6 text-lg leading-relaxed text-charcoal-muted border-l-2 border-gold pl-6">
             {area.excerpt}
           </p>

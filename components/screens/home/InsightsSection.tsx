@@ -86,7 +86,7 @@ export function InsightsSection() {
                 />
               </span>
               <span className="flex flex-1 flex-col justify-between gap-4 p-6 lg:p-8">
-                <span className="text-justify-rich">
+                <span>
                   <p className="font-serif text-xs font-medium uppercase tracking-[0.12em] text-stone">
                     Featured
                   </p>
@@ -128,7 +128,7 @@ export function InsightsSection() {
                 />
               </span>
               <span className="relative z-10 flex flex-col gap-4 p-6 lg:p-7">
-                <span className="text-justify-rich">
+                <span>
                   <p className="font-serif text-xs font-medium uppercase tracking-[0.12em] text-white/90">
                     Featured
                   </p>
@@ -167,7 +167,7 @@ export function InsightsSection() {
                     sizes="(min-width: 1024px) 33vw, 100vw"
                   />
                 </span>
-                <span className="flex flex-1 flex-col gap-3 p-5 lg:p-6 text-justify-rich">
+                <span className="flex flex-1 flex-col gap-3 p-5 lg:p-6">
                   <span className="flex min-h-10 gap-3">
                     <span
                       className={`w-1 shrink-0 self-stretch rounded-sm ${insightAccent}`}

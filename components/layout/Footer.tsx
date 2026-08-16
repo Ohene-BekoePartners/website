@@ -23,13 +23,10 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div>
-            <SiteLogo
-              variant="light-ui"
-              imageClassName="h-20 max-h-20"
-            />
+            <SiteLogo variant="light-ui" imageClassName="h-20 max-h-20" />
             <p className="mt-4 text-sm text-charcoal-muted max-w-xs">
-              Strategic legal counsel for corporations, investors, and
-              institutions.
+              Strategic legal counsel for individuals, corporations, investors,
+              and institutions.
             </p>
           </div>
 
