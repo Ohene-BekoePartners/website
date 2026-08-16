@@ -458,7 +458,7 @@ export const lawyers: Lawyer[] = [
       "Ms. Acheampong is a Candidate Attorney in the firm’s Litigation, Arbitration and Dispute Resolution, and Corporate and Commercial Law practice groups.",
     bio: [
       "With a meticulous eye for detail, she delivers exceptional results through dedicated professionalism.",
-      "Ms. Amponsah served as an Intern and Paralegal at Kwame Gyan & Associates, where she gained practical experience in legal research, drafting legal documents, litigation support, and client advisory.",
+      "Ms. Acheampong served as an Intern and Paralegal at Kwame Gyan & Associates, where she gained practical experience in legal research, drafting legal documents, litigation support, and client advisory.",
       "Her interests include Corporate and Commercial Law, Contract Law, Property Law, and Alternative Dispute Resolution.",
     ],
     qualifications: [
