@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { OpeningHoursBlock } from "@/components/layout/OpeningHoursBlock";
+import { OfficeMap } from "@/components/layout/OfficeMap";
 import { ContactForm } from "@/components/screens/contact/ContactForm";
 import { PageHero } from "@/components/ui/PageHero";
 
@@ -49,6 +50,9 @@ export default function ContactPage() {
                 </a>
               </p>
             </address>
+
+            {/* Sits directly under the address so the location reads together with it. */}
+            <OfficeMap className="mt-8" height="h-64" />
 
             <OpeningHoursBlock
               className="mt-8 border-t border-border pt-8"
