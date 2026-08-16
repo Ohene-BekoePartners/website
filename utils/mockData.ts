@@ -502,11 +502,23 @@ export const lawyers: Lawyer[] = [
 export interface ProfessionalStaffRole {
   id: string;
   title: string;
+  /** What the role does. Replaced by an individual profile once names are supplied. */
+  description: string;
 }
 
 export const professionalStaff: ProfessionalStaffRole[] = [
-  { id: "1", title: "Office Manager" },
-  { id: "2", title: "Clerk" },
+  {
+    id: "1",
+    title: "Office Manager",
+    description:
+      "Runs the day-to-day operations of the chambers — client reception and scheduling, file and records management, billing support, procurement, and correspondence — so that matters progress without administrative delay.",
+  },
+  {
+    id: "2",
+    title: "Clerk",
+    description:
+      "Handles the firm’s court and registry work — filing and serving processes, monitoring cause lists and hearing dates, retrieving records, and liaising with the court registries so that every deadline and procedural requirement is met.",
+  },
 ];
 
 export const insights: Insight[] = [
