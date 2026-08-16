@@ -451,10 +451,8 @@ export const lawyers: Lawyer[] = [
     name: "Gillian Adjoa Acheampong",
     slug: "gillian-adjoa-acheampong",
     title: "Candidate Attorney",
-    practiceAreas: [
-      "Litigation, Arbitration & Dispute Resolution",
-      "Corporate & Commercial Law",
-    ],
+    // Candidate Attorneys are not assigned practice areas.
+    practiceAreas: [],
     image: "gillian-adjoa-acheampong",
     intro:
       "Ms. Acheampong is a Candidate Attorney in the firm’s Litigation, Arbitration and Dispute Resolution, and Corporate and Commercial Law practice groups.",
@@ -467,10 +465,6 @@ export const lawyers: Lawyer[] = [
       "Bachelor of Laws (LLB) – Central University",
       "Bachelor of Science in Marketing (BSc) – Ghana Communication Technology University",
     ],
-    specialisms: [
-      "Litigation, Arbitration & Dispute Resolution",
-      "Corporate & Commercial Law",
-    ],
     contact: {
       phone: "+233 20 588 2007",
     },
@@ -480,10 +474,8 @@ export const lawyers: Lawyer[] = [
     name: "Samuel Bennett Owusu",
     slug: "samuel-bennett-owusu",
     title: "Candidate Attorney",
-    practiceAreas: [
-      "Litigation, Arbitration & Dispute Resolution",
-      "Criminal Law",
-    ],
+    // Candidate Attorneys are not assigned practice areas.
+    practiceAreas: [],
     // No portrait supplied yet — the profile renders an initials placeholder.
     image: "",
     intro:
@@ -496,14 +488,25 @@ export const lawyers: Lawyer[] = [
       "Bachelor of Science in Nursing (BSN) – University of Ghana",
       "St. James Seminary and Senior High School",
     ],
-    specialisms: [
-      "Litigation, Arbitration & Dispute Resolution",
-      "Criminal Law",
-    ],
     contact: {
       phone: "+233 20 588 2007",
     },
   },
+];
+
+/**
+ * Professional staff are listed by role while their names, photographs, and
+ * profiles are still being gathered. Cards are deliberately not links until
+ * there is a profile to open.
+ */
+export interface ProfessionalStaffRole {
+  id: string;
+  title: string;
+}
+
+export const professionalStaff: ProfessionalStaffRole[] = [
+  { id: "1", title: "Office Manager" },
+  { id: "2", title: "Clerk" },
 ];
 
 export const insights: Insight[] = [
