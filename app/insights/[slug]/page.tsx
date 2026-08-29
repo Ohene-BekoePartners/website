@@ -9,6 +9,10 @@ import {
   insightSectionBackLabel,
   insightSectionToPath,
 } from "@/utils/insightsNav";
+import {
+  FootnoteText,
+  Footnotes,
+} from "@/components/screens/insights/FootnoteText";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -70,6 +74,11 @@ export default async function InsightPage({ params }: Props) {
             />
           </div>
         )}
+        {insight.author && (
+          <p className="mb-8 font-serif text-sm uppercase tracking-widest text-stone">
+            BY <FootnoteText text={insight.author} />
+          </p>
+        )}
         <p className="text-lg leading-relaxed text-charcoal-muted border-l-2 border-gold pl-6 mb-12">
           {insight.excerpt}
         </p>
@@ -85,7 +94,7 @@ export default async function InsightPage({ params }: Props) {
                 )}
                 {section.paragraphs.map((para, pIdx) => (
                   <p key={pIdx} className="mb-6 last:mb-0">
-                    {para}
+                    <FootnoteText text={para} />
                   </p>
                 ))}
               </section>
@@ -98,6 +107,10 @@ export default async function InsightPage({ params }: Props) {
               discuss the topics covered, please contact us.
             </p>
           </div>
+        )}
+
+        {insight.footnotes && insight.footnotes.length > 0 && (
+          <Footnotes notes={insight.footnotes} />
         )}
 
         <div className="mt-16 pt-10 border-t border-border">

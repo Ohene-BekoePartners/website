@@ -103,6 +103,8 @@ export function getLawyerProfilePageImage(slug: string): string | undefined {
 const INSIGHT_IMG_OPTS = { w: 800, h: 500, q: 85 };
 export const insightImages: Record<string, string> = {
   "force-majeure-energy-hormuz": "/oil.jpg",
+  // Placeholder — awaiting an image for this article from the firm.
+  "guilty-but-too-big-to-be-behind-bars-agradaa": "/law.jpg",
   /** Courthouse / rule of law — dispute resolution & institutional justice */
   "dispute-regulatory-expansion-accra-2026": unsplashUrl(
     "1589829545856-d10d557cf95f",
