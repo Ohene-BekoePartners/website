@@ -476,8 +476,7 @@ export const lawyers: Lawyer[] = [
     title: "Candidate Attorney",
     // Candidate Attorneys are not assigned practice areas.
     practiceAreas: [],
-    // No portrait supplied yet — the profile renders an initials placeholder.
-    image: "",
+    image: "samuel-bennett-owusu",
     intro:
       "Samuel is an LL.B. candidate with background in Nursing. He serves as a Candidate Attorney in the law firm as he supports the Litigation, Arbitration and Dispute Resolution, and Criminal Law practice groups.",
     bio: [

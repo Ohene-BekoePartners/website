@@ -69,6 +69,7 @@ export const lawyerPortraits = {
   "lauda-lois-williams": "/louda_lois.jpeg",
   "emmanuel-opoku-somuah": "/emmanuel_opoku.jpeg",
   "gillian-adjoa-acheampong": "/gillian.jpeg",
+  "samuel-bennett-owusu": "/samuel-bennett-owusu.jpeg",
 } as const;
 
 export type LawyerSlug = keyof typeof lawyerPortraits;
