@@ -63,12 +63,12 @@ export function Footer() {
               <p>{address.line2}</p>
               <p className="mt-3">
                 <a
-                  href="mailto:contact@ohenebekoeandpartners.com"
+                  href="mailto:contact@obpgh.com"
                   className="inline-flex items-start gap-2 hover:text-gold transition-colors duration-200"
                 >
                   <MailIcon className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                   <span className="break-all">
-                    contact@ohenebekoeandpartners.com
+                    contact@obpgh.com
                   </span>
                 </a>
               </p>

@@ -327,7 +327,7 @@ export const lawyers: Lawyer[] = [
       },
     ],
     contact: {
-      email: "daniel.ohene-bekoe@ohenebekoeandpartners.com",
+      email: "daohene-bekoe@obpgh.com",
       phone: "+233 20 588 2007",
     },
   },
@@ -364,7 +364,7 @@ export const lawyers: Lawyer[] = [
       "Mining, Oil & Gas",
     ],
     contact: {
-      email: "irene.ofori-ani@ohenebekoeandpartners.com",
+      email: "irene.ofori-ani@obpgh.com",
       phone: "+233 20 588 2007",
     },
   },
@@ -408,7 +408,7 @@ export const lawyers: Lawyer[] = [
     ],
 
     contact: {
-      email: "lauda-lois.williams@ohenebekoeandpartners.com",
+      email: "lauda-lois.williams@obpgh.com",
       phone: "+233 20 588 2007",
     },
   },
@@ -450,7 +450,7 @@ export const lawyers: Lawyer[] = [
     ],
 
     contact: {
-      email: "emmanuel.opoku-somuah@ohenebekoeandpartners.com",
+      email: "emmanuel.opoku-somuah@obpgh.com",
       phone: "+233 20 588 2007",
     },
   },
@@ -581,7 +581,8 @@ export const insights: Insight[] = [
         ],
       },
       {
-        heading: "How different is The Agradaa case from other defrauding by false pretence cases?",
+        heading:
+          "How different is The Agradaa case from other defrauding by false pretence cases?",
         paragraphs: [
           "It is convenient at this point to consider briefly some decided cases on defrauding by false pretences and the sentences imposed on the convicts therein.",
           "Earlier, in the case of Blay vs The Republic,[^13] the appellant represented to the complainant that he could multiply an amount of money. The complainant paid G2,000.00 to the appellant. He was convicted of defrauding by false pretences and handed a sentence of three years’ imprisonment with hard labour. On appeal, the High Court reduced the sentence of three years to eighteen (18) months in prison.",

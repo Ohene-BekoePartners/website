@@ -143,7 +143,7 @@ export function ContactForm() {
         {status === "error" && (
           <p className="text-sm text-red-600" role="alert">
             {errorMessage ??
-              "We could not send your inquiry. Please try again, or email us directly at contact@ohenebekoeandpartners.com."}
+              "We could not send your inquiry. Please try again, or email us directly at contact@obpgh.com."}
           </p>
         )}
       </div>

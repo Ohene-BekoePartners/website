@@ -40,11 +40,8 @@ export default function CareersPage() {
               letter to the contact below.
             </p>
             <div className="mt-8">
-              <Button
-                href="mailto:careers@ohenebekoeandpartners.com"
-                variant="outline"
-              >
-                careers@ohenebekoeandpartners.com
+              <Button href="mailto:contact@obpgh.com" variant="outline">
+                contact@obpgh.com
               </Button>
             </div>
           </section>

@@ -172,10 +172,10 @@ export default function PrivacyPage() {
             For any questions about this privacy policy or our use of your
             personal data, please contact us at{" "}
             <a
-              href="mailto:contact@ohenebekoeandpartners.com"
+              href="mailto:contact@obpgh.com"
               className="text-gold hover:text-gold-muted transition-colors"
             >
-              contact@ohenebekoeandpartners.com
+              contact@obpgh.com
             </a>{" "}
             or by post at Ohene-Bekoe & Partners, 1 Liberation Road, North
             Ridge, Accra, Ghana.

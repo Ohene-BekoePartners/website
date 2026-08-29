@@ -19,7 +19,7 @@ The client gets a URL they can open on a phone, tablet, or laptop, log into, and
 |---|---|
 | **Estimated effort** | ~8 developer-days, deliverable in phases |
 | **Recurring cost** | **$0** on Sanity's free tier (site needs ~30 documents of the 10,000 allowed) |
-| **Client-visible change** | A new login at `studio.ohenebekoeandpartners.com` |
+| **Client-visible change** | A new login at `studio.obpgh.com` |
 | **Site performance** | Unchanged — pages stay statically generated |
 | **Risk to existing site** | Low — migration is page-by-page and reversible |
 
@@ -54,7 +54,7 @@ Because content is scattered through JSX, a single change means hunting through 
 
 | Fact | Occurrences | Files |
 |---|---|---|
-| `contact@ohenebekoeandpartners.com` | 11 | 6 |
+| `contact@obpgh.com` | 11 | 6 |
 | `+233 20 588 2007` | 9 | 4 |
 | `1 Liberation Road` | 6 | 6 |
 | `Accra` | 10 | 8 |
@@ -124,7 +124,7 @@ Recent requests that each required a full code-edit-build-commit-push cycle: del
 
    Next.js resizes these for delivery, so visitors are not downloading 9.5 MB — but the repository, every clone, and every build carry the full weight, and it grows with each new hire. Sanity stores originals outside the repository and serves optimised derivatives from a CDN. Its *hotspot* feature also lets the client mark the subject's face, so portraits crop correctly in the site's 3:4 frames instead of cutting off heads — currently a manual `object-top` guess in code.
 3. **The content model maps almost 1:1 onto our existing TypeScript interfaces.** `Lawyer`, `PracticeArea`, `Insight` become Sanity schemas with the same fields. Migration is mechanical.
-4. **The editing UI is a hosted web app.** We deploy it once to `studio.ohenebekoeandpartners.com`; the client bookmarks it. Nothing to install on any device.
+4. **The editing UI is a hosted web app.** We deploy it once to `studio.obpgh.com`; the client bookmarks it. Nothing to install on any device.
 5. **Instant publishing without rebuilds.** A webhook tells Next.js to regenerate only the affected pages. Edits are live in seconds and we do not burn Vercel build minutes on every typo fix.
 6. **Real version history.** Every field change is retained and reversible — meaningful protection for a firm whose website carries professional claims.
 
@@ -143,7 +143,7 @@ Recent requests that each required a full code-edit-build-commit-push cycle: del
 ```
    Client's phone / tablet / laptop
                 │
-                │  studio.ohenebekoeandpartners.com  (Sanity Studio)
+                │  studio.obpgh.com  (Sanity Studio)
                 ▼
         ┌───────────────────┐
         │   Sanity Content  │  ← drafts, publishing, version history,
@@ -238,7 +238,7 @@ Phased, so the site stays live and each phase is independently valuable.
 
 | Phase | Work | Effort | Client can self-serve after this |
 |---|---|---|---|
-| **0. Setup** | Sanity project, roles, `studio.ohenebekoeandpartners.com`, environment variables | 0.5 d | — |
+| **0. Setup** | Sanity project, roles, `studio.obpgh.com`, environment variables | 0.5 d | — |
 | **1. Schemas** | All schemas from §6, validation, previews, custom desk structure | 2.0 d | — |
 | **2. Content migration** | Script current `mockData.ts` into Sanity; upload and re-crop the 20 images; replace the 15 Unsplash URLs with owned assets | 1.5 d | — |
 | **3. Wire up the site** | Replace `mockData` imports with tagged Sanity queries, page by page | 2.0 d | **Team, practice areas, insights** |
@@ -284,7 +284,7 @@ Once Phase 5 lands, `utils/mockData.ts` (749 lines) and the hard-coded copy acro
 
 1. **Approve Sanity**, or choose Keystatic if the firm prefers content never leaves the repository.
 2. **Who gets accounts, and who may publish?** Recommend: two administrators (managing partner + one other), one editor.
-3. **Studio address** — `studio.ohenebekoeandpartners.com` (needs one DNS record) or the free `ohenebekoe.sanity.studio`.
+3. **Studio address** — `studio.obpgh.com` (needs one DNS record) or the free `obpgh.sanity.studio`.
 4. **Image rights.** 15 images are currently hot-linked from Unsplash. Migration is the moment to replace them with the firm's own photography — several are stock images standing in for the firm's actual offices and people.
 5. **Phasing** — all six phases in one go, or Phases 0–4 first?
 

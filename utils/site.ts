@@ -7,5 +7,5 @@ export const SITE_NAME = "Ohene-Bekoe & Partners";
  * `NEXT_PUBLIC_SITE_URL` (e.g. a Vercel preview domain).
  */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.ohenebekoeandpartners.com"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://obpgh.com"
 ).replace(/\/$/, "");
