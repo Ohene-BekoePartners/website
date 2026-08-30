@@ -152,10 +152,10 @@ export default function TermsPage() {
           <p>
             If you have questions about these terms of use, please contact us at{" "}
             <a
-              href="mailto:contact@obpgh.com"
+              href="mailto:secretariat@obpgh.com"
               className="text-gold hover:text-gold-muted transition-colors"
             >
-              contact@obpgh.com
+              secretariat@obpgh.com
             </a>{" "}
             or by post at Ohene-Bekoe & Partners, 1 Liberation Road, North
             Ridge, Accra, Ghana. For information about how we process your

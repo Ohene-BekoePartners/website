@@ -43,7 +43,8 @@ export function ContactForm() {
         body: JSON.stringify({
           ...data,
           access_key: ACCESS_KEY,
-          subject: `Website inquiry from ${data.firstName ?? ""} ${data.lastName ?? ""}`.trim(),
+          subject:
+            `Website inquiry from ${data.firstName ?? ""} ${data.lastName ?? ""}`.trim(),
           from_name: "Ohene-Bekoe & Partners website",
         }),
       });
@@ -130,8 +131,8 @@ export function ContactForm() {
 
       <p className="text-xs leading-relaxed text-charcoal-muted">
         Sending an inquiry does not create a lawyer&ndash;client relationship.
-        Please do not include confidential information until we have confirmed we
-        are able to act for you.
+        Please do not include confidential information until we have confirmed
+        we are able to act for you.
       </p>
 
       <div aria-live="polite">
@@ -143,7 +144,7 @@ export function ContactForm() {
         {status === "error" && (
           <p className="text-sm text-red-600" role="alert">
             {errorMessage ??
-              "We could not send your inquiry. Please try again, or email us directly at contact@obpgh.com."}
+              "We could not send your inquiry. Please try again, or email us directly at secretariat@obpgh.com."}
           </p>
         )}
       </div>

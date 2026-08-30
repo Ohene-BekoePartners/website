@@ -32,10 +32,10 @@ export function ContactSection() {
               <p className="text-white/80">Accra - Ghana</p>
               <p className="mt-4">
                 <a
-                  href="mailto:contact@obpgh.com"
+                  href="mailto:secretariat@obpgh.com"
                   className="text-gold-muted hover:text-gold transition-colors"
                 >
-                  contact@obpgh.com
+                  secretariat@obpgh.com
                 </a>
               </p>
               <p>

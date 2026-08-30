@@ -35,10 +35,10 @@ export default function ContactPage() {
               <p>Accra - Ghana</p>
               <p className="mt-6">
                 <a
-                  href="mailto:contact@obpgh.com"
+                  href="mailto:secretariat@obpgh.com"
                   className="text-gold hover:text-gold-muted transition-colors"
                 >
-                  contact@obpgh.com
+                  secretariat@obpgh.com
                 </a>
               </p>
               <p>
