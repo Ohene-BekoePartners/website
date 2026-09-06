@@ -629,47 +629,6 @@ export const insights: Insight[] = [
     ],
   },
   {
-    id: "1",
-    title: "Force majeure and energy supply contracts in the Hormuz crisis",
-    slug: "force-majeure-energy-hormuz",
-    image: getInsightImage("force-majeure-energy-hormuz"),
-    excerpt:
-      "Crude prices have surged amid disruption in the Strait of Hormuz, with producers reportedly issuing force majeure notices on oil and LNG shipments. For companies operating in the region, key considerations include contractual triggers, notice requirements, and mitigation.",
-    date: "2026-03-09",
-    category: "Energy & Infrastructure",
-    section: "publications",
-    featured: true,
-    content: [
-      {
-        paragraphs: [
-          "Crude prices have surged amid disruption in the Strait of Hormuz, with producers reportedly issuing force majeure notices on oil and LNG shipments. For companies operating in the region, key considerations include contractual triggers, notice requirements, and mitigation.",
-          "This briefing sets out the principal legal and practical issues for parties to energy supply contracts, and suggests steps that buyers and sellers can take to protect their position and manage exposure.",
-        ],
-      },
-      {
-        heading: "When can force majeure be invoked?",
-        paragraphs: [
-          "Force majeure clauses vary widely. Many require the relying party to prove that (i) an event beyond its reasonable control has occurred, (ii) that event has prevented or delayed performance, and (iii) the party has complied with any notice and mitigation obligations.",
-          "Disruption to shipping routes, closure of ports, or government action affecting supply may qualify depending on the drafting. Parties should check whether the clause lists specific events (e.g. war, blockade, acts of government) and whether there is a catch-all. Some clauses require the event to be unforeseeable; others do not.",
-        ],
-      },
-      {
-        heading: "Notice and mitigation",
-        paragraphs: [
-          "Contracts almost always require prompt notice of a force majeure event. Failure to give notice in time can be a bar to relief. Notice should describe the event, its impact on performance, and (if required) the expected duration. Keep evidence of when and how notice was given.",
-          "Many clauses also require the affected party to use reasonable endeavours to mitigate. That can include seeking alternative supply or routes, and keeping the counterparty informed. Document all steps taken.",
-        ],
-      },
-      {
-        heading: "Next steps",
-        paragraphs: [
-          "If you are party to energy supply contracts that may be affected by disruption in the region, we recommend reviewing the force majeure and related provisions (including termination and suspension rights), assessing whether notice or mitigation obligations have been triggered, and ensuring that internal and external communications are consistent with your legal position.",
-          "Our energy and dispute resolution teams advise on force majeure, supply chain disruption, and related contractual and regulatory issues. For further information, please contact us.",
-        ],
-      },
-    ],
-  },
-  {
     id: "2",
     title:
       "Ohene-Bekoe & Partners expands dispute resolution and regulatory advisory capacity in Accra",
@@ -700,40 +659,6 @@ export const insights: Insight[] = [
         paragraphs: [
           "Daniel Arthur Ohene-Bekoe, Founding & Managing Partner, said: 'Our clients operate in demanding sectors—maritime, energy, financial services, and regulated industries—and they need advisers who can move quickly and think across disputes and compliance. Deepening our bench in Accra is central to how we serve them.'",
           "For further information about the firm’s capabilities or to discuss a new matter, please contact us through the details on our website.",
-        ],
-      },
-    ],
-  },
-  {
-    id: "3",
-    title:
-      "Ohene-Bekoe & Partners recognised in Chambers Global Guide for 2026",
-    slug: "chambers-global-2026",
-    image: getInsightImage("chambers-global-2026"),
-    excerpt:
-      "We are pleased to share Ohene-Bekoe & Partners' recognition in the Chambers and Partners Global 2026 guide, which reflects the global standing of our international arbitration practice.",
-    date: "2026-02-12",
-    category: "Recognition",
-    section: "firm-news",
-    featured: false,
-    content: [
-      {
-        paragraphs: [
-          "We are pleased to share Ohene-Bekoe & Partners's recognition in the Chambers and Partners Global 2026 guide. The firm is ranked in the areas of International Arbitration and Commercial Litigation, and several of our partners are ranked as leading individuals.",
-          "Chambers Global is one of the leading legal directories, with rankings based on research and feedback from clients and peers. Recognition in the guide reflects the quality of our work and the trust that our clients place in us.",
-        ],
-      },
-      {
-        heading: "Rankings and feedback",
-        paragraphs: [
-          "Ohene-Bekoe & Partners is ranked in Band 2 for International Arbitration (Global-wide) and in Band 3 for Commercial Litigation (England). Feedback cited in the guide describes the firm as 'an astoundingly good unit of top litigators' and 'exceptional across the board,' with clients noting our 'strategic approach' and 'ability to handle the most complex disputes.'",
-          "Partners Daniel Arthur Ohene-Bekoe, Ama Serwaa, and Abena Akoto are ranked in International Arbitration and/or Commercial Litigation. The directory notes their experience in high-value commercial and investment arbitration, and in multi-jurisdictional litigation.",
-        ],
-      },
-      {
-        heading: "Thank you",
-        paragraphs: [
-          "We would like to thank our clients and peers for their continued support and for the feedback that contributes to these rankings. We remain committed to delivering the highest standard of advice and representation in our core practice areas.",
         ],
       },
     ],
@@ -778,48 +703,7 @@ export const insights: Insight[] = [
         ],
       },
     ],
-  },
-  {
-    id: "5",
-    title: "Dispute resolution trends in West Africa",
-    slug: "dispute-resolution-trends-west-africa",
-    image: getInsightImage("dispute-resolution-trends-west-africa"),
-    excerpt:
-      "Arbitration and litigation across the region continue to evolve. We consider recent developments and what they mean for international investors and local parties.",
-    date: "2026-01-15",
-    category: "Dispute Resolution",
-    section: "publications",
-    featured: false,
-    content: [
-      {
-        paragraphs: [
-          "Arbitration and litigation across West Africa continue to evolve, with new legislation, institutional developments, and a growing body of case law. This note highlights recent trends and their implications for international investors and local parties.",
-          "The region remains an important destination for investment in energy, infrastructure, mining, and finance. Disputes in these sectors often involve cross-border elements, choice of law and seat, and enforcement across jurisdictions. Understanding the local and international framework is essential.",
-        ],
-      },
-      {
-        heading: "Arbitration law and institutions",
-        paragraphs: [
-          "Several jurisdictions in the region have adopted or updated arbitration legislation based on the UNCITRAL Model Law. Ghana, Nigeria, and Senegal are among the states that have sought to create a more predictable environment for international arbitration.",
-          "Regional and international institutions, including the Lagos Chamber of Commerce International Arbitration Centre (LACIAC), the OHADA CCJA, and the ICC, are frequently chosen for disputes with a West African connection. Seat selection, enforceability of awards, and the availability of interim relief remain key considerations for parties and their advisers.",
-        ],
-      },
-      {
-        heading: "Enforcement and courts",
-        paragraphs: [
-          "Enforcement of arbitral awards in the region has improved in many jurisdictions, though local advice is often needed to navigate procedural requirements and any challenges. The New York Convention is in force in a number of West African states, and courts have shown increasing willingness to uphold awards that meet the convention's criteria.",
-          "Commercial courts or dedicated divisions have been established in some jurisdictions to handle complex commercial and arbitration-related matters. Their decisions are contributing to a more consistent and transparent body of law.",
-        ],
-      },
-      {
-        heading: "Practical considerations",
-        paragraphs: [
-          "Parties drafting contracts with a West African connection should consider the choice of governing law, seat of arbitration, and institution; the availability of interim measures; and the ease of enforcement in the relevant jurisdictions. Local counsel can assist with due diligence and with any court proceedings.",
-          "Ohene-Bekoe & Partners advises clients on international arbitration and litigation with a West African dimension, including under OHADA, English law, and other applicable laws. For further information, please contact us.",
-        ],
-      },
-    ],
-  },
+  }
 ];
 
 export function getInsightsBySection(section: InsightSection): Insight[] {

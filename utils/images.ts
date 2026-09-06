@@ -102,22 +102,16 @@ export function getLawyerProfilePageImage(slug: string): string | undefined {
 /** Insight/publication card images: Unsplash URLs or `/…` paths from `public/`. */
 const INSIGHT_IMG_OPTS = { w: 800, h: 500, q: 85 };
 export const insightImages: Record<string, string> = {
-  "force-majeure-energy-hormuz": "/oil.jpg",
-  // Placeholder — awaiting an image for this article from the firm.
-  "guilty-but-too-big-to-be-behind-bars-agradaa": "/law.jpg",
+  "guilty-but-too-big-to-be-behind-bars-agradaa":
+    "/guilty_but_too_big_article.jpeg",
   /** Courthouse / rule of law — dispute resolution & institutional justice */
   "dispute-regulatory-expansion-accra-2026": unsplashUrl(
     "1589829545856-d10d557cf95f",
     INSIGHT_IMG_OPTS,
   ),
-  "chambers-global-2026": "/chambers.jpg",
   /** Digital asset markets / trading context — regulatory & crypto outlook */
   "regulatory-digital-assets-2026": unsplashUrl(
     "1611974789855-9c2a0a7236a3",
-    INSIGHT_IMG_OPTS,
-  ),
-  "dispute-resolution-trends-west-africa": unsplashUrl(
-    "1641295438018-fb626fcdd87f",
     INSIGHT_IMG_OPTS,
   ),
 };
