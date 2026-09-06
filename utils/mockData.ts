@@ -261,12 +261,12 @@ export const lawyers: Lawyer[] = [
     ],
     image: "daniel-ohene-bekoe",
     intro:
-      "Daniel Arthur Ohene-Bekoe is a distinguished Lawyer, Maritime Consultant, Chartered Arbitrator and Chartered Tax Consultant.",
+      "Daniel Arthur Ohene-Bekoe is a Lawyer, Maritime Consultant, and Tax Consultant.",
     bio: [
-      "Prior to establishing the firm in 2026, Mr. Ohene-Bekoe began his legal career at the Office of the Attorney-General and Ministry of Justice (OAGMoJ), where he served as an Assistant State Attorney. He joined the OAGMoJ in 2021 as Special Assistant to the Deputy Attorney-General and Minister for Justice, after undertaking his internship and national service in 2020 and his pupillage in 2021.",
-      "An accomplished and dynamic litigator, Mr. Ohene-Bekoe has successfully handled a wide range of cases and appeared before all Superior Courts of Ghana. Over the years, he has provided strategic legal advisory services and expert opinions to clients both within and outside the shores of Ghana.",
-      "He is a Drafting Team Member of the Republic of Ghana for the Seventh National Report to the Convention on Biological Diversity (CBD) and the First National Report on the Implementation of the Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits arising from their Utilization.",
-      "Beyond legal practice, Mr. Ohene-Bekoe maintains a strong commitment to academia. With over seven years' experience as a lecturer, he has taught at Renvoi. He is currently a lecturer at the Central University and adjunct lecturer at Regional Maritime University. He has authored and published several scholarly articles in reputable journals, reflecting his dedication to research and academic excellence.",
+      "Prior to establishing the firm in 2026, Mr. Ohene-Bekoe began his legal career at the Office of the Attorney-General and Ministry of Justice (OAGMoJ), where he served as an Assistant State Attorney and State Attorney. He joined the OAGMoJ in 2021 as Special Assistant to the Deputy Attorney-General and Minister for Justice, after undertaking his internship and national service in 2020 and his pupillage in 2021.",
+      "A dynamic litigator, Mr. Ohene-Bekoe has successfully handled a wide range of cases and appeared before all Superior Courts of Ghana. Over the years, he has provided strategic legal advisory services and expert opinions to clients both within and outside the shores of Ghana.",
+      "He was a Drafting Team Member of the Republic of Ghana for the Seventh National Report to the Convention on Biological Diversity (CBD) and the First National Report on the Implementation of the Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits arising from their Utilization.",
+      "Beyond legal practice, Mr. Ohene-Bekoe maintains a strong commitment to academia. With over seven years' experience as a lecturer, he has taught at Renvoi. He is currently a lecturer at the Central University and adjunct lecturer at Zenith University College. He has authored and published several scholarly articles in reputable journals, reflecting his dedication to research and academic excellence.",
       "Currently expanding his professional expertise, Mr. Ohene-Bekoe is pursuing advanced professional qualifications with the Chartered Institute of Taxation, Ghana and the Institute of Chartered Accountants Ghana, further strengthening his proficiency in taxation and accounting.",
       "Outside his professional and academic pursuits, he enjoys travelling, swimming, hiking, attending stage productions including plays by Uncle Ebo Whyte and spending quality time with his family. His multi-faceted interests reflect a balanced and purposeful approach to personal and professional growth.",
     ],
@@ -296,21 +296,21 @@ export const lawyers: Lawyer[] = [
       {
         // firm: "ICC arbitration (Republic of Ghana)",
         firm: "",
-        role: "Part of the legal team represented the Republic of Ghana in an ICC arbitration involving a dispute of US$12.5 million branch profit tax brought by an investor company",
+        role: "Part of the legal team that represented the Republic of Ghana in an ICC arbitration involving a dispute of US$12.5 million branch profit tax brought by an investor company",
       },
-      {
-        // firm: "Supreme Court of Ghana",
-        firm: "",
-        role: "Supreme Court case which …, ",
-        caseName:
-          "Shafic Osman vs Board of Governors Wesley Girls Senior High, Ghana Education Service & Attorney-General",
-      },
-      {
-        // firm: "Supreme Court of Ghana",
-        firm: "",
-        role: "Supreme Court case which …., ",
-        caseName: "Benjamin Yaw Osei vs Attorney-General",
-      },
+      // {
+      //   // firm: "Supreme Court of Ghana",
+      //   firm: "",
+      //   role: "Supreme Court case which …, ",
+      //   caseName:
+      //     "Shafic Osman vs Board of Governors Wesley Girls Senior High, Ghana Education Service & Attorney-General",
+      // },
+      // {
+      //   // firm: "Supreme Court of Ghana",
+      //   firm: "",
+      //   role: "Supreme Court case which …., ",
+      //   caseName: "Benjamin Yaw Osei vs Attorney-General",
+      // },
       {
         // firm: "Supreme Court of Ghana",
         firm: "",

@@ -176,11 +176,17 @@ export default async function TeamMemberProfilePage({ params }: Props) {
                       {member.contact.email && (
                         <li>
                           <a
+                            href={`mailto: secretariat@obpgh.com`}
+                            className="text-gold hover:text-gold-muted transition-colors duration-200 break-all"
+                          >
+                            secretariat@obpgh.com
+                          </a>
+                          {/* <a
                             href={`mailto:${member.contact.email}`}
                             className="text-gold hover:text-gold-muted transition-colors duration-200 break-all"
                           >
                             {member.contact.email}
-                          </a>
+                          </a> */}
                         </li>
                       )}
                       <li>
