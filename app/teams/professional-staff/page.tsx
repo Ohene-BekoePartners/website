@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/utils/seo";
 import { professionalStaff } from "@/utils/mockData";
 import { PageHero } from "@/components/ui/PageHero";
 import { ProfessionalStaffCard } from "@/components/screens/lawyer/ProfessionalStaffCard";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Professional Staff",
   description:
     "Our professional staff at Ohene-Bekoe & Partners support our lawyers and clients with expertise in administration, operations, and client services.",
-};
+  path: "/teams/professional-staff",
+});
 
 export default function ProfessionalStaffPage() {
   return (

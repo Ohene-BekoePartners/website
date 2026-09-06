@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/utils/seo";
 import { lawyers } from "@/utils/mockData";
 import { PageHero } from "@/components/ui/PageHero";
 import { TeamMemberCard } from "@/components/screens/lawyer/ProfileCardSections";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Attorneys",
   description:
     "Meet the attorneys of Ohene-Bekoe & Partners. Experienced advisers for complex corporate and dispute resolution matters.",
-};
+  path: "/teams/attorneys",
+});
 
 export default function AttorneysPage() {
   return (

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/utils/seo";
 import { PageHero } from "@/components/ui/PageHero";
 import { AboutWithNav } from "@/components/layout/AboutWithNav";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "How we work",
   description:
     "Our client-centric approach: clear communication, tailored solutions, and pragmatic legal advice from Ohene-Bekoe & Partners.",
-};
+  path: "/about/how-we-work",
+});
 
 const proseClass =
   "prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-foreground prose-p:text-charcoal-muted prose-p:max-w-prose prose-p:leading-relaxed prose-a:text-gold";

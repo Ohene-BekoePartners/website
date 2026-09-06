@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/utils/seo";
 import { PageHero } from "@/components/ui/PageHero";
 import { AboutWithNav } from "@/components/layout/AboutWithNav";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "What to expect",
   description:
     "What clients can expect when they work with Ohene-Bekoe & Partners: professionalism, responsiveness, and lasting relationships.",
-};
+  path: "/about/what-to-expect",
+});
 
 const proseClass =
   "prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-foreground prose-p:text-charcoal-muted prose-p:max-w-prose prose-p:leading-relaxed prose-a:text-gold";

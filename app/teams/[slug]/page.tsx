@@ -3,7 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTeamMemberBySlug, getAllTeamMemberSlugs } from "@/utils/team";
-import { getLawyerProfilePageImage } from "@/utils/images";
+import { getLawyerProfilePageImage, getLawyerPortrait } from "@/utils/images";
+import { buildMetadata } from "@/utils/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbSchema, personSchema } from "@/utils/schema";
 import { PageHero } from "@/components/ui/PageHero";
 import { ProfileCardSections } from "@/components/screens/lawyer/ProfileCardSections";
 import { PortraitPlaceholder } from "@/components/ui/PortraitPlaceholder";
@@ -27,10 +30,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ? member.bio[0]
         : undefined) ??
     `${member.name}, ${member.title}. ${"practiceAreas" in member && member.practiceAreas?.length ? member.practiceAreas.join(", ") : ""}`.trim();
-  return {
+  return buildMetadata({
     title: `${member.name} | ${member.title}`,
     description,
-  };
+    path: `/teams/${member.slug}`,
+    image: getLawyerPortrait(member.slug),
+    imageAlt: `${member.name}, ${member.title}`,
+    type: "profile",
+  });
 }
 
 function SidebarSection({
@@ -76,6 +83,16 @@ export default async function TeamMemberProfilePage({ params }: Props) {
       />
 
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+        <JsonLd
+          data={[
+            personSchema(member, getLawyerPortrait(member.slug)),
+            breadcrumbSchema([
+              { name: "Home", path: "/" },
+              { name: listLabel, path: backHref },
+              { name: member.name, path: `/teams/${member.slug}` },
+            ]),
+          ]}
+        />
         <nav
           aria-label="Breadcrumb"
           className="text-sm text-charcoal-muted mb-10"

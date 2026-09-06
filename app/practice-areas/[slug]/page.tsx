@@ -6,6 +6,9 @@ import {
   getPracticeAreaBySlug,
   getAllPracticeAreaSlugs,
 } from "@/utils/mockData";
+import { buildMetadata } from "@/utils/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbSchema, practiceAreaSchema } from "@/utils/schema";
 import { PageHero } from "@/components/ui/PageHero";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -20,10 +23,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const area = getPracticeAreaBySlug(slug);
   if (!area) return { title: "Expertise" };
-  return {
+  return buildMetadata({
     title: area.title,
     description: area.excerpt,
-  };
+    path: `/practice-areas/${area.slug}`,
+    image: area.image,
+    imageAlt: area.title,
+  });
 }
 
 export default async function PracticeAreaDetailPage({ params }: Props) {
@@ -43,6 +49,16 @@ export default async function PracticeAreaDetailPage({ params }: Props) {
       />
 
       <div className="mx-auto max-w-3xl px-6 py-16 lg:px-8 lg:py-24">
+        <JsonLd
+          data={[
+            practiceAreaSchema(area),
+            breadcrumbSchema([
+              { name: "Home", path: "/" },
+              { name: "Our Expertise", path: "/practice-areas" },
+              { name: area.title, path: `/practice-areas/${area.slug}` },
+            ]),
+          ]}
+        />
         <nav
           aria-label="Breadcrumb"
           className="text-sm text-charcoal-muted mb-10"

@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/utils/seo";
 import { PageHero } from "@/components/ui/PageHero";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
   description:
     "How Ohene-Bekoe & Partners collects, uses, and protects your personal data. Privacy notice in accordance with UK GDPR and data protection law.",
-};
+  path: "/privacy",
+});
 
 const LAST_UPDATED = "1 March 2026";
 

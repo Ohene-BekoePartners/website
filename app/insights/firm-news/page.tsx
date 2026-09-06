@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/utils/seo";
 import { getInsightsBySection } from "@/utils/mockData";
 import { PageHero } from "@/components/ui/PageHero";
 import { InsightsWithNav } from "@/components/layout/InsightsWithNav";
 import { InsightCardsGrid } from "@/components/screens/insights/InsightCardsGrid";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Firm News",
   description:
     "News, recognition, and announcements from Ohene-Bekoe & Partners.",
-};
+  path: "/insights/firm-news",
+});
 
 export default function FirmNewsPage() {
   const items = getInsightsBySection("firm-news");

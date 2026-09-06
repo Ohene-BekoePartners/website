@@ -3,6 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { insights } from "@/utils/mockData";
+import { buildMetadata } from "@/utils/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { articleSchema, breadcrumbSchema } from "@/utils/schema";
 import { PageHero } from "@/components/ui/PageHero";
 import { InsightsWithNav } from "@/components/layout/InsightsWithNav";
 import {
@@ -24,10 +27,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const insight = insights.find((i) => i.slug === slug);
   if (!insight) return { title: "Insight" };
-  return {
+  return buildMetadata({
     title: insight.title,
     description: insight.excerpt,
-  };
+    path: `/insights/${insight.slug}`,
+    image: insight.image,
+    imageAlt: insight.title,
+    type: "article",
+    publishedTime: insight.date,
+    authors: insight.author
+      ? [insight.author.replace(/\[\^\d+\]/g, "").trim()]
+      : undefined,
+    section: insight.category,
+  });
 }
 
 function formatDate(dateStr: string) {
@@ -61,6 +73,16 @@ export default async function InsightPage({ params }: Props) {
         />
       }
     >
+      <JsonLd
+        data={[
+          articleSchema(insight),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Insights", path: sectionHref },
+            { name: insight.title, path: `/insights/${insight.slug}` },
+          ]),
+        ]}
+      />
       <div className="max-w-3xl">
         {insight.image && (
           <div className="aspect-video w-full relative rounded-lg overflow-hidden bg-slate-light mb-12 img-editorial">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/utils/seo";
 import Image from "next/image";
 import { OpeningHoursBlock } from "@/components/layout/OpeningHoursBlock";
 import { OfficeMap } from "@/components/layout/OfficeMap";
@@ -7,11 +8,12 @@ import { PageHero } from "@/components/ui/PageHero";
 
 const contactImageSrc = "/random-institute-FDcydLvV7Io-unsplash.jpg";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Contact us",
   description:
     "Get in touch with Ohene-Bekoe & Partners. For an introductory conversation with one of our partners, please contact us.",
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

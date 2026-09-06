@@ -1,0 +1,13 @@
+/**
+ * Emits a JSON-LD block. `<` is escaped so content can never close the script
+ * tag early, which is the one injection risk with inline structured data.
+ */
+export function JsonLd({ data }: { data: object | object[] }) {
+  const json = JSON.stringify(data).replace(/</g, "\\u003c");
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: json }}
+    />
+  );
+}

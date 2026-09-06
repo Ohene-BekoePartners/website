@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/utils/seo";
 import { Button } from "@/components/ui/Button";
 import { PageHero } from "@/components/ui/PageHero";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Careers",
   description:
     "Join Ohene-Bekoe & Partners. We seek talented lawyers and professionals who share our commitment to excellence and client service.",
-};
+  path: "/careers",
+});
 
 export default function CareersPage() {
   return (

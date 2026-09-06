@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/utils/seo";
 import Link from "next/link";
 import { PageHero } from "@/components/ui/PageHero";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Terms of Use",
   description:
     "Terms and conditions governing use of the Ohene-Bekoe & Partners website. Disclaimers and limitations of liability.",
-};
+  path: "/terms",
+});
 
 const LAST_UPDATED = "1 March 2026";
 

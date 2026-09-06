@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/utils/seo";
 import Link from "next/link";
 import Image from "next/image";
 import { practiceAreas } from "@/utils/mockData";
 import { PageHero } from "@/components/ui/PageHero";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Our Expertise",
   description:
     "Litigation, maritime, criminal law, corporate secretarial & compliance, family law, employment, and debt recovery — Ohene-Bekoe & Partners.",
-};
+  path: "/practice-areas",
+});
 
 export default function PracticeAreasPage() {
   return (

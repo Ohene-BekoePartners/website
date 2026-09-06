@@ -5,6 +5,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Analytics } from "@vercel/analytics/next";
 import { LOGO_ICON_SRC } from "@/utils/branding";
 import { SITE_NAME, SITE_URL } from "@/utils/site";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { organisationSchema, webSiteSchema } from "@/utils/schema";
 
 const SITE_TITLE =
   "Ohene-Bekoe & Partners | Strategic Legal Counsel for Complex Business";
@@ -19,8 +21,19 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
-  alternates: {
-    canonical: "/",
+  // No `alternates.canonical` here: metadata is inherited, so a value set on the
+  // root layout would canonicalise every page to the homepage. Each page sets
+  // its own via `buildMetadata`.
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
   icons: {
     icon: LOGO_ICON_SRC,
@@ -64,6 +77,7 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
+        <JsonLd data={[organisationSchema(), webSiteSchema()]} />
         <Header />
         <main id="main-content" className="flex-1" role="main">
           {children}
